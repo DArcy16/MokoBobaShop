@@ -266,11 +266,6 @@
     }
   ],
   "order": [
-    {
-      "id": 1,
-      "name": "Standard Milk Tea",
-      "price": "2500",
-      "category": 1
-    }
+
   ]
 }
