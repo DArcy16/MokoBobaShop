@@ -10,7 +10,7 @@ const Tab = ({isAdmin = false}) => {
             <Link to='/menu' className="tab tab-bordered tab-sm"> Menu </Link>
             <Link to='/aboutus' className="tab tab-bordered tab-sm"> About us</Link>
            </>}
-           {isAdmin && <Link to='/admin' className="tab tab-bordered tab-sm"> Edit </Link>}
+            <Link to='/admin' className="tab tab-bordered tab-sm"> Edit </Link>
            {isAdmin && <Link to='/orderp' className="tab tab-bordered tab-sm"> Order </Link>}
 
     </div>
