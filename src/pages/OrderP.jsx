@@ -44,10 +44,6 @@ const Order = () => {
                   ))}
                 </tbody>
               </table>
-             
-              {orderP===[] && <div className='h-full items-center text-4xl text-bold mx-auto'>
-                <h2>No Order Yet</h2>
-              </div>}
             </div>
         </div>
     </>
