@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Tab = ({isAdmin = false}) => {
   return (
-    <div className="tabs space-x-12 md:space-x-48 flex justify-center -mt-8 pb-5 bg-base-100">
+    <div className="tabs space-x-12 md:space-x-48 flex justify-center -mt-8 pb-5">
           <Link to='/' className="tab tab-bordered tab-sm"> Home </Link>
            {!isAdmin && 
            <>

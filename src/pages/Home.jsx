@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Card from '../components/Card';
 import HCard from '../components/HCard';
 import Tab from '../components/Tab';
@@ -125,7 +126,9 @@ const Home = () => {
 
               
               <div classsName="-pt-20 md:mt-0">
+                <Link to='/admin'>                   
                   <img src='/IMG_4509.png' alt='logo' className='w-36 h-36 md:w-48 md:h-48'></img>
+                </Link>
               </div>
               
           
