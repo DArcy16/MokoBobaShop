@@ -7,37 +7,37 @@ const images =[
   {
     id : 1,
     name : 'Blueberry Yougurt Juice',
-    photo : 'src/images/BlueBerry_Yougurt_Juice.jpeg'
+    photo : '/BlueBerry_Yougurt_Juice.jpeg'
   },
   {
     id : 2,
     name : 'Dirty Milk Tea',
-    photo : 'src/images/Dirty_Milk_Tea.jpeg'
+    photo : '/Dirty_Milk_Tea.jpeg'
   },
   {
     id : 3,
     name : 'Milo Dinosaur',
-    photo : 'src/images/Milo_Dinosaur.jpeg'
+    photo : '/Milo_Dinosaur.jpeg'
   },
   {
     id : 4,
     name : 'Oreo Milk Tea',
-    photo : 'src/images/Oreo_Milktea.jpeg'
+    photo : '/Oreo_Milktea.jpeg'
   },
   {
     id : 5,
     name : 'Strawberry Lava',
-    photo : 'src/images/Strawberry_Lava.jpeg'
+    photo : '/Strawberry_Lava.jpeg'
   },
   {
     id : 6,
     name : 'Strawberry Soda',
-    photo : 'src/images/Strawberry_Soda.jpeg'
+    photo : '/Strawberry_Soda.jpeg'
   },
   {
     id : 7,
     name : 'Sweet Melon Milk Tea',
-    photo : 'src/images/Sweet_Melon_MilkTea.jpeg'
+    photo : '/Sweet_Melon_MilkTea.jpeg'
   },
 ];
 
@@ -45,13 +45,13 @@ const hImages = [
   {
     id: 1,
     name : 'Purple Sticky Rice',
-    photo : 'src/images/Purple_Sticky_Rice.jpeg',
+    photo : '/Purple_Sticky_Rice.jpeg',
     label : 'Our Signature:'
   },
   {
     id : 2,
     name : 'Chocolate Smoothie',
-    photo : 'src/images/Chocolate_Smoothie.jpeg',
+    photo : '/Chocolate_Smoothie.jpeg',
     label : 'Best Selling:'
   }
 ];
@@ -103,12 +103,12 @@ const Home = () => {
                 <div className='flex flex-row mt-2 space-x-2 md:mt-0 md:space-x-0 md:flex-col md:space-y-4 md:items-center'>
                   <div>
                     <a href="https://www.facebook.com/mokobobashop?mibextid=LQQJ4d" target='_blank'>
-                      <img src="src/images/icons8-facebook.svg" alt="" className='h-8'/>
+                      <img src="/icons8-facebook.svg" alt="" className='h-8'/>
                     </a>
                   </div>
                   <div>
                     <a href="https://instagram.com/mokobobashop?igshid=YmMyMTA2M2Y=" target='_blank'>
-                      <img src="src/images/instagram-new.png" alt="" className='h-8'/>
+                      <img src="/instagram-new.png" alt="" className='h-8'/>
                     </a>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ const Home = () => {
 
               
               <div classsName="-pt-20 md:mt-0">
-                  <img src='src/images/IMG_4509.png' alt='logo' className='w-36 h-36 md:w-48 md:h-48'></img>
+                  <img src='/IMG_4509.png' alt='logo' className='w-36 h-36 md:w-48 md:h-48'></img>
               </div>
               
           

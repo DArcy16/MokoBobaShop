@@ -8,7 +8,7 @@ const AboutUs = () => {
       <hr />
     <div className='container p-8 mx-auto min-w-sm sm:w-3/4 md:w-1/2'>
       <div className="w-36 h-36 md:w-48 md:h-48 items-center mx-auto mt-6">
-        <img src="src/images/Founder.jpeg" alt="founder img" /> 
+        <img src="/Founder.jpeg" alt="founder img" /> 
       </div>
 
       <h2 className='text-lg md:text-2xl text-center mt-2'><em>Founder</em></h2>
@@ -24,7 +24,7 @@ const AboutUs = () => {
       And 'Moko Boba' is just a cute name that express our theme and we like it so.``</em>
        </h2>
       <div className='flex justify-center space-x-12 w-full mx-auto'>
-            <img src='src/images/IMG_4509.png' alt='logo' className='w-36 h-36 md:w-48 md:h-48'></img>
+            <img src='/IMG_4509.png' alt='logo' className='w-36 h-36 md:w-48 md:h-48'></img>
       </div>
 
 
