@@ -64,7 +64,7 @@ const Home = () => {
     <Tab />
     <hr />
     <div className='container box-border w-full h-full mx-auto mb-4'>
-      <div className='bg-base-300 p-5 md:p-6'>
+      <div className='p-5 md:p-6'>
         <div className='w-full text-center mx-auto text-4xl md:text-6xl md:mb-4 md:mt-2 space-y-2 md:space-y-6'>
         <h1><em>Welcome To</em></h1>
         <h1><em>Moko Boba Shop</em></h1>
@@ -74,7 +74,7 @@ const Home = () => {
     </div>
       
 
-      <div className='w-full flex justify-between items-center bg-base-300 rounded-border'>
+      <div className='w-full flex justify-between items-center rounded-border'>
         {
           hImages.map((image) => <HCard name={image.name} photo={image.photo} label={image.label} key={image.id}/>)
         }
@@ -84,7 +84,7 @@ const Home = () => {
       <hr />
       
 
-      <div className="bg-base-300 px-3">
+      <div className="px-3">
         <h3 className='ml-12 md:ml-20 text-base md:text-xl mt-6'> <em>Collections:</em> </h3>
         <div className='flex flex-wrap gap-3 md:gap-10 justify-center my-6'>
         
@@ -96,7 +96,7 @@ const Home = () => {
       
       <hr />
 
-      <footer className='Container flex flex-col md:flex-row-reverse md:justify-between md:px-20 items-center w-full md:h-48 bg-base-300'>
+      <footer className='Container flex flex-col md:flex-row-reverse md:justify-between md:px-20 items-center w-full md:h-48'>
         
               <div className='mt-6 md:mt-0 md:space-y-4'>
                 <h2 className='font-bold text-base text-center'> Social: </h2>
