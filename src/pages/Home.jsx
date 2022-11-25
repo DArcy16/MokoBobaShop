@@ -84,9 +84,9 @@ const Home = () => {
       <hr />
       
 
-      <div className="bg-base-300 p-2">
+      <div className="bg-base-300 px-3">
         <h3 className='ml-12 md:ml-20 text-base md:text-xl mt-6'> <em>Collections:</em> </h3>
-        <div className='flex flex-wrap gap-4 md:gap-10 justify-center my-6'>
+        <div className='flex flex-wrap gap-3 md:gap-10 justify-center my-6'>
         
         {
           images.map((image) => <Card name={image.name} photo={image.photo} key={image.id}/>)
