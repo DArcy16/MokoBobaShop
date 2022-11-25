@@ -10,7 +10,7 @@ const Admin = ({newProduct, setNewProduct, cid, productsC, categories}) => {
     
     <>  
         <Tab isAdmin={isAdmin}/>
-        <hr />  
+        <hr className='bg-base-300'/>  
 
         <Category categories={categories} isAdmin={isAdmin} />
 

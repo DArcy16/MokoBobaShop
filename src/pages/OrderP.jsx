@@ -24,7 +24,7 @@ const Order = () => {
   return (
     <>
         <Tab isAdmin={isAdmin}/>
-        <hr />
+        <hr className='bg-base-300'/>
         <div className="container box-border items-center p-4 space-y-4">
             <h2 className='text-xl font-bold text-center'>Order List</h2>
             <div className="overflow-x-auto">

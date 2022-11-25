@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <>
       <Tab />
-      <hr />
+      <hr className='bg-base-300'/>
     <div className='container p-8 mx-auto min-w-sm sm:w-3/4 md:w-1/2'>
       <div className="w-36 h-36 md:w-48 md:h-48 items-center mx-auto mt-6">
         <img src="/Founder.jpeg" alt="founder img" /> 
