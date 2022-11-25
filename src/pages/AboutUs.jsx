@@ -23,7 +23,7 @@ const AboutUs = () => {
       And the three stars on our logo means three siblings of us.<br />
       And 'Moko Boba' is just a cute name that express our theme and we like it so.``</em>
        </h2>
-      <div className='flex justify-center space-x-12 w-full mx-auto  bg-base-300'>
+      <div className='flex justify-center space-x-12 w-full mx-auto'>
             <img src='src/images/IMG_4509.png' alt='logo' className='w-36 h-36 md:w-48 md:h-48'></img>
       </div>
 
