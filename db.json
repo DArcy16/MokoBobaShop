@@ -265,12 +265,5 @@
       "name": "Tea"
     }
   ],
-  "order": [
-    {
-      "id": 11,
-      "name": "Chocolate Lava",
-      "price": "4000",
-      "category": 3
-    }
-  ]
+  "order": []
 }

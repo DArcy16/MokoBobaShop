@@ -118,14 +118,14 @@ const Home = () => {
               <div className='mt-6 space-y-2 md:space-y-5 md:mt-0'>
                 <h2 className='font-bold text-base text-center md:text-left'> Contact Us: </h2>
                 <h2 className='md:text-base text-sm text-center md:text-left'>Phone No : <em>09784074717</em>  </h2>
-                <h2 className='md:text-base text-sm text-center md:text-left'>Address : <em>Near BEHS(1), Lashio</em> </h2>
+                <h2 className='md:text-base text-sm text-center md:text-left'>Address : <em>Near BEHS(1),Lashio</em> </h2>
                 
 
               </div>
 
               
               <div classsName="-pt-20 md:mt-0">
-                  <img src='src/images/IMG_4509.png' alt='logo' className='w-48 h-48'></img>
+                  <img src='src/images/IMG_4509.png' alt='logo' className='w-36 h-36 md:w-48 md:h-48'></img>
               </div>
               
           
