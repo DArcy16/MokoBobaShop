@@ -92,7 +92,7 @@ function App() {
 
   return (
     <MenuContext.Provider value={menuContextValue}>
-      <main className='w-full md:w-5/6 h-full bg-neutral mx-auto box-border'>
+      <main className='w-full md:w-5/6 h-full bg-base-300 mx-auto box-border'>
       
 
         
