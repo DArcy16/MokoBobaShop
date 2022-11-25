@@ -4,7 +4,7 @@ const Table = ({item,handleProductOrder}) => {
   
   return (
     <tr key={item.id}>
-        <th></th>
+        <th>{item.id}</th>
         <td>{item.name}</td>
         <td><input type="checkbox" className="checkbox" onChange={() => handleProductOrder(item.id)} /></td>
     </tr>

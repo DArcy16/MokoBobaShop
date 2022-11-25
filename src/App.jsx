@@ -54,11 +54,17 @@ function App() {
 
   function handleProductOrder(id) {
     const productO = products.find(product => product.id === id);
+    const product = {
+      name : productO.name,
+      price : productO.price,
+      category : productO.category
+    }
     fetch('http://localhost:3000/order',{
       method: 'POST',
-      body: JSON.stringify(productO),
+      body: JSON.stringify(product),
       headers: {'Content-Type': 'application/json'}
     })
+    
   }
 
 
