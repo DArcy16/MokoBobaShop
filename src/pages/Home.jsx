@@ -63,7 +63,7 @@ const Home = () => {
   return (
     <>
     <Tab />
-    <hr className='bg-base-300'/>
+    <hr />
     <div className='container box-border w-full h-full mx-auto mb-4'>
       <div className='p-5 md:p-6'>
         <div className='w-full text-center mx-auto text-4xl md:text-6xl md:mb-4 md:mt-2 space-y-2 md:space-y-6'>
@@ -82,7 +82,7 @@ const Home = () => {
 
       </div>
 
-      <hr className='bg-base-300'/>
+      <hr />
       
 
       <div className="px-3">
@@ -95,7 +95,7 @@ const Home = () => {
         </div>
       </div>
       
-      <hr className='bg-base-300'/>
+      <hr />
 
       <footer className='Container flex flex-col md:flex-row-reverse md:justify-between md:px-20 items-center w-full md:h-48'>
         

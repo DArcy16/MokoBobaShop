@@ -7,7 +7,7 @@ const Menu = ({ cid, productsC, categories}) => {
   return (
     <>
         <Tab />
-        <hr className='bg-base-300'/>
+        <hr />
 
         <Category categories={categories} />
 

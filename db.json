@@ -233,6 +233,12 @@
       "name": "Honey Lemon",
       "price": "3000",
       "category": 7
+    },
+    {
+      "id": "145df097-0deb-48e3-887f-ede8d6159999",
+      "name": "Watermelon Soda",
+      "price": "2500",
+      "category": 6
     }
   ],
   "categories": [
