@@ -54,9 +54,9 @@ const Order = () => {
               </table>
             </div>
                { isLoading &&
-                  <div class="flex ml-32 md:ml-96 h-24 mx-auto items-center">
-                  <span class="animate-ping absolute inline-flex h-6 w-24 md:h-8 md:w-36 rounded-full bg-zinc-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-4 w-24 md:h-6 md:w-36 bg-zinc-500 opacity-40"></span>
+                  <div className="flex ml-32 md:ml-96 h-24 mx-auto items-center">
+                  <span className="animate-ping absolute inline-flex h-6 w-24 md:h-8 md:w-36 rounded-full bg-zinc-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-4 w-24 md:h-6 md:w-36 bg-zinc-500 opacity-40"></span>
                   </div>}
                 
             
