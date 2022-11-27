@@ -110,7 +110,7 @@ function App() {
   },[])
   
   useEffect(() => {
-    fetch('http://localhost:3000/products')
+    fetch('https://my-json-server.typicode.com/DArcy16/MokoBobaShop/products')
       .then((res) => res.json())
       .then((data) => {
         setProducts([...products,...data])
@@ -139,7 +139,7 @@ function App() {
 
   function handleProductAdd() {
     setIsAdding(true);
-    fetch('http://localhost:3000/products',{
+    fetch('https://my-json-server.typicode.com/DArcy16/MokoBobaShop/products',{
       method: 'POST',
       body: JSON.stringify(newProduct),
       headers : { 'Content-Type': 'application/json'}
@@ -162,7 +162,7 @@ function App() {
       category : productO.category
     }
     setIsOrdering(true);
-    fetch('http://localhost:3000/order',{
+    fetch('https://my-json-server.typicode.com/DArcy16/MokoBobaShop/order',{
       method: 'POST',
       body: JSON.stringify(product),
       headers: {'Content-Type': 'application/json'}
@@ -174,7 +174,7 @@ function App() {
   function handleProductDelete(id) {
     if(!id <= 39) {
       setIsDeleting(true);
-      fetch('http://localhost:3000/products/' + id,{
+      fetch('https://my-json-server.typicode.com/DArcy16/MokoBobaShop/products/' + id,{
       method: 'DELETE',
     })
     .then (() => setIsDeleting(false));

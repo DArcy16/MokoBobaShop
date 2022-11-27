@@ -8,7 +8,7 @@ const Order = () => {
 
     useEffect(() => {
       setIsLoading(true);
-      fetch('http://localhost:3000/order')
+      fetch('https://my-json-server.typicode.com/DArcy16/MokoBobaShop/order')
         .then((res) => res.json())
         .then((data) => {
         setOrderP(data)
@@ -19,7 +19,7 @@ const Order = () => {
     const isAdmin = true;
 
     function handleProductOrder(id) {
-    fetch('http://localhost:3000/order/' + id,{
+    fetch('https://my-json-server.typicode.com/DArcy16/MokoBobaShop/order/' + id,{
       method : 'DELETE'
     })
   }
