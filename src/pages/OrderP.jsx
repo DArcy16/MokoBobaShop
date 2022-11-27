@@ -44,7 +44,6 @@ const Order = () => {
                 </thead>
                   
                
-                <h2 className='text-center font-bold '>No Order Yet!!</h2> :
                 
                 <tbody>
                   {/* <!-- row 1 --> */}
