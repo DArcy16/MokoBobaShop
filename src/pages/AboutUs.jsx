@@ -18,8 +18,8 @@ const AboutUs = () => {
       <h2 className='text-lg md:text-xl text-center mt-6'><em>Started at</em></h2>
       <h2 className='text-base md:text-l text-center mt-1'><em>19 years</em></h2>
       <h2 className='text-lg md:text-xl text-center mt-6'><em>Logo meaning</em></h2>
-      <h2 className='text-base md:text-l text-center mt-1 leading-relaxed'><em>``It's our tag line.<br />
-      We wish for giving our customers vibe of flying to the moon by drinking our drinks.<br />
+      <h2 className='text-base md:text-l text-center mt-1 leading-relaxed'><em>
+      ``We wish for giving our customers vibe of flying to the moon by drinking our drinks.<br />
       And the three stars on our logo means three siblings of us.<br />
       And 'Moko Boba' is just a cute name that express our theme and we like it so.``</em>
        </h2>

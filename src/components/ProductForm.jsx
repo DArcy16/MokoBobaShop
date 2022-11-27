@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { MenuContext } from '../App'
 
-const ProductForm = ({newProduct, setNewProduct, cid }) => {
+const ProductForm = ({newProduct, setNewProduct, cid, isAdding = false }) => {
     const {handleProductAdd} = useContext(MenuContext);
 
     function handleProductInput(e) {
@@ -47,9 +47,14 @@ const ProductForm = ({newProduct, setNewProduct, cid }) => {
                 
                   
       </form>
-      <div className=' flex justify-center mt-6 '>
-            {cid && <button className="btn glass btn-sm text-center" onClick={handleProductAdd}  disabled = {newProduct.price === ''}>Add Product</button>}
-      </div>
+      { cid && <div className=' flex justify-center mt-6 '>
+             {isAdding ? 
+            <span class="flex w-2/8">
+                <span class="animate-ping absolute inline-flex h-6 w-24 rounded-full bg-zinc-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-6 w-24 bg-zinc-500 opacity-40"></span>
+              </span> :
+            <button className="btn btn-sm text-center" onClick={handleProductAdd}  disabled = {newProduct.price === ''}>Add Product</button>}
+      </div>}
  </div>
   )
 }

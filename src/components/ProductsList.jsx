@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { MenuContext } from '../App';
 
-const ProductsList = ({productC, isAdmin = false }) => {
+const ProductsList = ({productC, isAdmin = false, isDeleting =false, isOrdering = false}) => {
   const {handleProductDelete, handleProductOrder} = useContext(MenuContext);
 
   return (
@@ -14,21 +14,31 @@ const ProductsList = ({productC, isAdmin = false }) => {
             </div>
 
             { !isAdmin && <div>
+              {isOrdering ?
+              <span class="flex w-2/8">
+                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-zinc-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-zinc-500 opacity-40"></span>
+              </span> :
               <button 
               className="btn btn-outline btn-xs ml-4"
               onClick={() => handleProductOrder(productC.id)}
               >
                 Order
-              </button>
+              </button>}
             </div>}
             
             {isAdmin && <div className="flex w-2/8">
+              {isDeleting ? 
+              <span class="flex w-2/8">
+                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-zinc-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-zinc-500 opacity-40"></span>
+              </span> :
               <button 
               className="btn btn-circle btn-outline btn-xs -pt-4 -ml-6"
               onClick={() => handleProductDelete(productC.id)}
               >
                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M6 18L18 6M6 6l12 12" /></svg>
-              </button>
+              </button>}
             </div>}
       
           </div>

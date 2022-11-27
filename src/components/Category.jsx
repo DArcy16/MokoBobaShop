@@ -11,7 +11,7 @@ const Category = ({categories, isAdmin = false}) => {
             name='category'
             onChange={handleCategorizedProduct}
             className="select select-bordered w-full h-10 text-base md:w-64 md:text-xl items-center text-center">
-              {!isAdmin && <option disabled selected>Select</option>}
+              {!isAdmin && <option disabled selected>Select Category</option>}
               {isAdmin && <option disabled selected>Tap to edit</option>}
               {
                 categories.map((category) => (

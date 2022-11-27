@@ -7,7 +7,7 @@ import Tab from '../components/Tab';
 const images =[
   {
     id : 1,
-    name : 'Blueberry Yougurt Juice',
+    name : 'Blueberry Yougurt Soda',
     photo : '/BlueBerry_Yougurt_Juice.jpeg'
   },
   {
@@ -70,7 +70,7 @@ const Home = () => {
         <h1><em>Welcome To</em></h1>
         <h1><em>Moko Boba Shop</em></h1>
       </div>
-      <p className='text-center text-xs md:text-lg mt-2 md:mt-6 mb-2 tracking-widest'><em> "Let's fly to the moon by drinking our drink" </em></p>
+      <p className='text-center text-xs md:text-lg mt-2 md:mt-6 mb-2 tracking-[.4em]'><em> "Sip me baby one more time!" </em></p>
 
     </div>
       
