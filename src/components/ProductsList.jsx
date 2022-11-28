@@ -15,9 +15,9 @@ const ProductsList = ({productC, isAdmin = false, isDeleting =false, isOrdering 
 
             { !isAdmin && <div>
               {isOrdering ?
-              <span class="flex w-2/8">
-                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-zinc-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-zinc-500 opacity-40"></span>
+              <span className='flex'>
+                <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-orange-300 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-300 opacity-40"></span>
               </span> :
               <button 
               className="btn btn-outline btn-xs ml-4"
@@ -30,8 +30,8 @@ const ProductsList = ({productC, isAdmin = false, isDeleting =false, isOrdering 
             {isAdmin && <div className="flex w-2/8">
               {isDeleting ? 
               <span class="flex w-2/8">
-                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-zinc-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-zinc-500 opacity-40"></span>
+                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-orange-300 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-300 opacity-40"></span>
               </span> :
               <button 
               className="btn btn-circle btn-outline btn-xs -pt-4 -ml-6"

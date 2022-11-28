@@ -49,9 +49,9 @@ const ProductForm = ({newProduct, setNewProduct, cid, isAdding = false }) => {
       </form>
       { cid && <div className=' flex justify-center mt-6 '>
              {isAdding ? 
-            <span class="flex w-2/8">
-                <span class="animate-ping absolute inline-flex h-6 w-24 rounded-full bg-zinc-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-6 w-24 bg-zinc-500 opacity-40"></span>
+            <span className="flex w-2/8">
+                <span className="animate-ping absolute inline-flex h-6 w-24 rounded-full bg-orange-300 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-6 w-24 bg-orange-300 opacity-40"></span>
               </span> :
             <button className="btn btn-sm text-center" onClick={handleProductAdd}  disabled = {newProduct.price === ''}>Add Product</button>}
       </div>}

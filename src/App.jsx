@@ -102,11 +102,8 @@ function App() {
   });   
 
   useEffect(() => {
-    console.log(products)
     const productsJSON = localStorage.getItem(LOCAL_KEY);
     if  (productsJSON !== null) setProducts(JSON.parse(productsJSON));
-    console.log(products)
-
   },[])
   
   useEffect(() => {
@@ -145,7 +142,8 @@ function App() {
       headers : { 'Content-Type': 'application/json'}
     })
     .then (() => setIsAdding(false))
-    setProductsC([...productsC, newProduct])
+    setProductsC([...productsC, newProduct]);
+    setProducts([...products, newProduct]);
     setNewProduct({
     id: uuid(),
     name: '',
