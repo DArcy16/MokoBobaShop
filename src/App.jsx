@@ -170,7 +170,10 @@ function App() {
 
 
   function handleProductDelete(id) {
-    if(!id <= 39) {
+    if(id <= 39) {
+      setProducts(products.filter((item => item.id !== id)));
+      setProductsC(productsC.filter(item => item.id !== id));
+    } else {
       setIsDeleting(true);
       fetch('https://my-json-server.typicode.com/DArcy16/MokoBobaShop/products/' + id,{
       method: 'DELETE',
@@ -178,8 +181,7 @@ function App() {
     .then (() => setIsDeleting(false));
     }
     
-    setProducts(products.filter((item => item.id !== id)));
-    setProductsC(productsC.filter(item => item.id !== id));
+    
     // console.log(products);
   }
 

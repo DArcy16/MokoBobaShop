@@ -13,9 +13,9 @@ const ProductsList = ({productC, isAdmin = false, isDeleting =false, isOrdering 
               <h2>{productC.price}</h2>
             </div>
 
-            { !isAdmin && <div>
+            { !isAdmin && <div className='flex w-2/8'>
               {isOrdering ?
-              <span className='flex'>
+              <span className='flex w-2/8'>
                 <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-orange-300 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-300 opacity-40"></span>
               </span> :
@@ -29,9 +29,9 @@ const ProductsList = ({productC, isAdmin = false, isDeleting =false, isOrdering 
             
             {isAdmin && <div className="flex w-2/8">
               {isDeleting ? 
-              <span class="flex w-2/8">
-                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-orange-300 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-300 opacity-40"></span>
+              <span className="flex w-2/8">
+                <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-orange-300 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-300 opacity-40"></span>
               </span> :
               <button 
               className="btn btn-circle btn-outline btn-xs -pt-4 -ml-6"
